@@ -12,5 +12,6 @@ Fast Fourier transform of Alphabets to visualize common patterns
 # C
 ![C0](https://raw.githubusercontent.com/gaurav-95/FourierImage/master/combined/c_0_fourier.png)
 ![C1](https://raw.githubusercontent.com/gaurav-95/FourierImage/master/combined/c_1_fourier.png)
+
 # Comparing using skimage image similarity metrics:
 ![Similarity Table](https://raw.githubusercontent.com/gaurav-95/FourierImage/master/similarity_table.png)
