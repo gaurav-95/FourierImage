@@ -14,8 +14,13 @@ for image_title in list_images:
     img_and_magnitude = np.concatenate((img, magnitude_spectrum), axis=1)
 
     # cv2.imshow(image_title, img_and_magnitude)
-    name, extension = os.path.splitext(image_title)
-    cv2.imwrite(f"{name}_fourier{extension}", img_and_magnitude)
+    file_name = os.path.basename(image_title)
+    name, extension = os.path.splitext(file_name)
+    
+    name = name.replace(" ", "")
+
+    cv2.imwrite(f"combined/{name}_fourier{extension}", img_and_magnitude)
+    cv2.imwrite(f"fouriers/{name}_fourier_mag{extension}", magnitude_spectrum)
     
 # cv2.waitKey(0)
 # cv2.destroyAllWindows()
